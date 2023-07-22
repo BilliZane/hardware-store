@@ -31,6 +31,6 @@
 
   &__text--bold {
     font-size: 20px;
-    font-family: 'SegoeUIBold', sans-serif;
+    @include font-bold;
   }
 }

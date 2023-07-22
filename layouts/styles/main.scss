@@ -5,20 +5,25 @@
 
 @import './blocks/container.scss';
 @import './blocks/top.scss';
-@import './blocks/header.scss';
-@import './blocks/log-reg.scss';
-@import './blocks/cart.scss';
-@import './blocks/search.scss';
+
+@import './blocks/header/header.scss';
+@import './blocks/header/log-reg.scss';
+@import './blocks/header/cart.scss';
+@import './blocks/header/search.scss';
+
 @import './blocks/nav.scss';
+@import './blocks/nav-mobile.scss';
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'SegoeUIRegular', sans-serif;
+  @include font-regular;
   color: $c-grey-blue;
   font-size: 16px;
+
+  position: relative;
 
   &::-webkit-scrollbar {
     max-width: 5px;

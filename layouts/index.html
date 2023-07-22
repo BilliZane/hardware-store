@@ -51,7 +51,7 @@
               </div>
             </li>
             <li class="header__item">
-              <p class="log-reg">
+              <div class="log-reg">
                 <svg
                   width="24"
                   height="24"
@@ -69,7 +69,7 @@
 
                 <span class="log-reg__item">Login</span> /
                 <span class="log-reg__item">Registration</span>
-              </p>
+              </div>
             </li>
             <li class="header__item">
               <p class="cart">
@@ -125,17 +125,45 @@
       </div>
     </header>
 
-    <div class="nav">
+    <nav class="nav">
       <div class="container">
         <ul class="nav__items">
-          <div class="nav__item nav__item--active">Main</div>
-          <div class="nav__item">Product catalog</div>
-          <div class="nav__item">About</div>
-          <div class="nav__item">Photo</div>
-          <div class="nav__item">Forum</div>
-          <div class="nav__item">Feedbacks</div>
+          <li class="nav__item nav__item--active">Main</li>
+          <li class="nav__item">Product catalog</li>
+          <li class="nav__item">About</li>
+          <li class="nav__item">Photo</li>
+          <li class="nav__item">Forum</li>
+          <li class="nav__item">Feedbacks</li>
         </ul>
       </div>
+    </nav>
+
+    <div class="nav-mobile nav-mobile--active">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="nav-mobile__close"
+      >
+        <path
+          d="M1 1L13 13M1 13L13 1L1 13Z"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+
+      <ul class="nav-mobile__items">
+        <li class="nav-mobile__item nav-mobile__item--active">Main</li>
+        <li class="nav-mobile__item">Product catalog</li>
+        <li class="nav-mobile__item">About</li>
+        <li class="nav-mobile__item">Photo</li>
+        <li class="nav-mobile__item">Forum</li>
+        <li class="nav-mobile__item">Feedbacks</li>
+      </ul>
     </div>
   </body>
 </html>

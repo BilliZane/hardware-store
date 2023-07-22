@@ -10,3 +10,13 @@
   align-items: flex-start;
   justify-content: center;
 }
+
+// font family
+
+@mixin font-regular {
+  font-family: 'SegoeUIRegular', sans-serif;
+}
+
+@mixin font-bold {
+  font-family: 'SegoeUIBold', sans-serif;
+}

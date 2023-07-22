@@ -48,7 +48,7 @@
   }
 
   &__info-title {
-    font-family: 'SegoeUIBold', sans-serif;
+    @include font-bold;
     font-size: 26px;
     padding-bottom: 5px;
   }
