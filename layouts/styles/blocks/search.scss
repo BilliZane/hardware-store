@@ -1,0 +1,32 @@
+.search {
+  position: relative;
+  @include flex-between;
+  @media (max-width: 780px) {
+    min-width: 100%;
+    margin-top: 20px;
+  }
+
+  &__input {
+    border-radius: 30px;
+    padding: 6px 10px;
+    border: solid 1px $c-grey-light;
+    color: $c-grey-dark;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    @media (max-width: 780px) {
+      min-width: 100%;
+    }
+
+    &::placeholder {
+      color: $c-grey-dark;
+    }
+  }
+
+  &__icon-wrap {
+    position: absolute;
+    right: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
