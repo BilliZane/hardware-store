@@ -72,7 +72,7 @@
               </div>
             </li>
             <li class="header__item">
-              <p class="cart">
+              <div class="cart">
                 <svg
                   width="24"
                   height="24"
@@ -87,7 +87,7 @@
                 </svg>
 
                 <span class="cart__titile">Cart</span>
-              </p>
+              </div>
             </li>
           </ul>
 
@@ -164,6 +164,101 @@
         <li class="nav-mobile__item">Forum</li>
         <li class="nav-mobile__item">Feedbacks</li>
       </ul>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <div class="content__wrap">
+          <aside class="aside">
+            <div class="price-widget">
+              <div class="price-widget__row">
+                <span class="price-widget__label">Price:</span>
+                <span class="price-widget__reset">Reset</span>
+              </div>
+              <form class="price-widget__row">
+                <input
+                  type="number"
+                  min="100"
+                  placeholder="100"
+                  value=""
+                  class="price-widget__input"
+                />
+                <span class="price-widget__dash">-</span>
+                <input
+                  type="number"
+                  min="1000"
+                  max="2000"
+                  placeholder="2000"
+                  value=""
+                  class="price-widget__input"
+                />
+                <button type="submit" class="price-widget__btn">Apply</button>
+              </form>
+            </div>
+
+            <ul class="stock-widget">
+              <li class="stock-widget__item stock-widget__title">
+                All products
+              </li>
+              <li class="stock-widget__item">
+                In stock
+                <span class="stock-widget__amount"
+                  >(72)</span
+                >
+              </li>
+              <li class="stock-widget__item">
+                Out of stock
+                <span class="stock-widget__amount"
+                  >(34)</span
+                >
+              </li>
+            </ul>
+
+            <ul class="categories-widget">
+              <li class="categories-widget__item categories-widget__title">
+                Categories:
+              </li>
+              <li class="categories-widget__item">
+                Computers
+                <span class="categories-widget__amount">(18)</span>
+              </li>
+              <li class="categories-widget__item">
+                Laptops
+                <span class="categories-widget__amount">(22)</span>
+              </li>
+              <li class="categories-widget__item">
+                Smart watches
+                <span class="categories-widget__amount">(31)</span>
+              </li>
+              <li class="categories-widget__item">
+                Accessories
+                <span class="categories-widget__amount">(20)</span>
+              </li>
+            </ul>
+
+            
+          </aside>
+
+          <main class="main-content">
+            Main content. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Iure distinctio deserunt voluptatem aut tenetur nulla ipsa
+            voluptatibus reiciendis doloribus sed? Accusamus inventore magnam
+            voluptate repudiandae quos, temporibus cumque iure quis? Main
+            content. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Iure distinctio deserunt voluptatem aut tenetur nulla ipsa
+            voluptatibus reiciendis doloribus sed? Accusamus inventore magnam
+            voluptate repudiandae quos, temporibus cumque iure quis? Main
+            content. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Iure distinctio deserunt voluptatem aut tenetur nulla ipsa
+            voluptatibus reiciendis doloribus sed? Accusamus inventore magnam
+            voluptate repudiandae quos, temporibus cumque iure quis? Main
+            content. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Iure distinctio deserunt voluptatem aut tenetur nulla ipsa
+            voluptatibus reiciendis doloribus sed? Accusamus inventore magnam
+            voluptate repudiandae quos, temporibus cumque iure quis?
+          </main>
+        </div>
+      </div>
     </div>
   </body>
 </html>

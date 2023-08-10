@@ -1,0 +1,59 @@
+.price-widget {
+  margin-bottom: 30px;
+  &__row {
+    @include flex-between;
+    margin-bottom: 18px;
+    font-size: 18px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    // @media (max-width: 780px) {
+    //   @include flex-start;
+    // }
+  }
+
+  &__label {
+    font-family: 'SegoeUIBold', sans-serif;
+  }
+
+  &__reset {
+    color: $c-grey-dark;
+    transition: color $transitionDuration;
+    &:hover {
+      cursor: pointer;
+      color: $c-orange;
+    }
+  }
+
+  &__input {
+    font-family: 'SegoeUIBold', sans-serif;
+    padding: 7px 10px 7px;
+    color: $c-grey-blue;
+    border: solid 1px $c-grey-light;
+    border-radius: 5px;
+    max-width: 80px;
+
+    @media (max-width: 780px) {
+      min-width: 35%;
+    }
+  }
+
+  &__dash {
+    margin: 0 5px;
+  }
+
+  &__btn {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 3px;
+    background: $c-grey-blue;
+    color: $c-white;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: $transitionDuration;
+
+    &:hover {
+      background: $c-orange;
+    }
+  }
+}

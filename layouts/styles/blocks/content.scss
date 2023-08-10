@@ -1,0 +1,10 @@
+.content {
+  padding-top: 30px;
+  &__wrap {
+    @include flex-between;
+    align-items: flex-start;
+    @media(max-width: 780px) {
+      flex-wrap: wrap;
+    }
+  }
+}

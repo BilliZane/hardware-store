@@ -1,0 +1,31 @@
+.stock-widget {
+  font-size: 18px;
+  margin-bottom: 30px;
+  border: solid 1px $c-grey-light;
+  border-radius: 5px;
+
+  &__item {
+    padding: 15px 20px;
+    border-bottom: solid 1px $c-grey-light;
+    font-size: 16px;
+    transition: color $transitionDuration;
+    &:last-child {
+      border-radius: 0 0 5px 5px;
+      border-bottom: none;
+    }
+    &:hover {
+      color: $c-orange;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    font-family: 'SegoeUIBold', sans-serif;
+    background-color: $c-grey-lighten;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__amount {
+    font-family: 'SegoeUIBold', sans-serif;
+  }
+}
