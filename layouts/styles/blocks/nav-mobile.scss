@@ -1,9 +1,10 @@
 .nav-mobile {
   display: none;
   background: $c-grey-blue;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 3;
   min-width: 100%;
   min-height: 100vh;
   transform: translateX(-100%);

@@ -1,8 +1,12 @@
 .header {
+  background: $c-white;
   &__wrap {
     @include flex-between;
     padding: 38px 0;
     flex-wrap: wrap;
+    @media (max-width: 565px) {
+      padding-bottom: 15px;
+    }
   }
 
   &__items {

@@ -1,0 +1,29 @@
+.filters {
+  @include flex-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: solid 1px $c-grey-light;
+  border-radius: 5px;
+  @include font-bold;
+
+  &__products {
+    color: $c-black;
+  }
+
+  &__products-amount {
+  }
+
+  &__wrap {
+  }
+
+  &__label {
+    color: $c-black;
+  }
+
+  &__item {
+  }
+
+  &__label {
+  }
+}

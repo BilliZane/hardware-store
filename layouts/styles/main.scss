@@ -20,8 +20,14 @@
 @import './blocks/aside/price-widget.scss';
 @import './blocks/aside/stock-widget.scss';
 @import './blocks/aside/categories-widget.scss';
+@import './blocks/aside/product-of-the-week.scss';
+
+@import './blocks/buttons//button-dark.scss';
+@import './blocks/buttons//button-light.scss';
 
 @import './blocks/main/main-content.scss';
+@import './blocks/main/breadcrumbs.scss';
+@import './blocks/main/filters.scss';
 
 * {
   box-sizing: border-box;

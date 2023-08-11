@@ -1,0 +1,17 @@
+.button-dark {
+  background: $c-grey-blue;
+  @include flex-between;
+  @include font-bold;
+  color: $c-white;
+  padding: 5px 8px;
+  border-radius: 3px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background $transitionDuration;
+  &:hover {
+    background: $c-grey-blue-dark;
+  }
+  &__text {
+    padding-left: 5px;
+  }
+}

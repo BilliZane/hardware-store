@@ -1,0 +1,43 @@
+.breadcrumbs {
+  @include flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 1px $c-grey-light;
+  border-radius: 5px;
+  @include font-bold;
+  color: $c-black;
+
+  &__item {
+    position: relative;
+    margin: 5px 0;
+    margin-right: 24px;
+    transition: color $transitionDuration;
+
+    &:hover {
+      cursor: pointer;
+      color: $c-orange;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:after {
+      content: '';
+      background: url('../../../img/main/breadcrumbs-arrow.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 4px;
+      right: -14px;
+      min-height: 11px;
+      min-width: 6px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
