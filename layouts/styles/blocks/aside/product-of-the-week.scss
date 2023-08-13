@@ -34,7 +34,8 @@
 
   &__descr {
     text-align: center;
-    padding: 15px 0;
+    padding-top: 20px;
     line-height: 20px;
+    @include font-bold;
   }
 }

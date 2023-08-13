@@ -3,15 +3,30 @@
   @include flex-between;
   @include font-bold;
   color: $c-white;
-  padding: 5px 8px;
+  padding: 6px 10px;
   border-radius: 3px;
   font-size: 15px;
   cursor: pointer;
   transition: background $transitionDuration;
+
+  @media (max-width: 950px) {
+    margin-bottom: 0;
+  }
+
   &:hover {
     background: $c-grey-blue-dark;
   }
+
   &__text {
     padding-left: 5px;
+    word-wrap: break-word;
+  }
+
+  &__mr {
+    margin-right: 15px;
+    @media (max-width: 950px) {
+      // margin-right: 0;
+      // margin-bottom: 8px;
+    }
   }
 }
