@@ -2,15 +2,22 @@
   border: solid 1px $c-grey-light;
   border-radius: 5px;
   padding: 25px 15px;
-  position: relative;
   font-size: 18px;
+
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 460px) {
     font-size: 16px;
   }
 
   &__image-wrap {
-    text-align: center;
+    @include flex-center;
+    flex-grow: 1;
+  }
+
+  &__labels {
+    position: relative;
   }
 
   &__image {
@@ -20,7 +27,7 @@
   &__title {
     padding-top: 20px;
     line-height: 22px;
-    
+
     @media (max-width: 460px) {
       font-size: 16px;
       line-height: 20px;
@@ -43,18 +50,23 @@
 
   &__shipping {
     @include flex-start;
-    flex-grow: 1;
   }
 
   &__label {
-    padding-right: 10px;
+    padding: 15px 0;
+    margin-right: 15px;
   }
+
+  &__label--alert {
+    color: $c-red-tr;
+  }
+
   &__buttons {
     @include flex-center;
     padding-top: 10px;
 
-    @media (max-width: 950px) {
-      flex-wrap: wrap;
+    @media (max-width: 960px) {
+      @include flex-column-center;
     }
   }
 }

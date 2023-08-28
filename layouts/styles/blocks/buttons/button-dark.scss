@@ -6,10 +6,11 @@
   padding: 6px 10px;
   border-radius: 3px;
   font-size: 15px;
+  min-width: max-content;
   cursor: pointer;
   transition: background $transitionDuration;
 
-  @media (max-width: 950px) {
+  @media (max-width: 960px) {
     margin-bottom: 0;
   }
 
@@ -24,9 +25,14 @@
 
   &__mr {
     margin-right: 15px;
-    @media (max-width: 950px) {
-      // margin-right: 0;
-      // margin-bottom: 8px;
+    @media (max-width: 960px) {
+      margin-right: 0;
+    }
+  }
+
+  &__mb {
+    @media (max-width: 960px) {
+      margin-bottom: 5px;
     }
   }
 }

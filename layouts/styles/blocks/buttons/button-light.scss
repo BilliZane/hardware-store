@@ -6,6 +6,8 @@
   padding: 6px 10px;
   border-radius: 3px;
   font-size: 15px;
+  min-width: max-content;
+
   cursor: pointer;
   transition: background $transitionDuration;
 
@@ -19,5 +21,9 @@
 
   &__mr {
     margin-right: 15px;
+  }
+  &--disabled {
+    background: $c-grey-dark;
+    pointer-events: none;
   }
 }
