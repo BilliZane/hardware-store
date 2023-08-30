@@ -256,6 +256,10 @@ button {
   }
 }
 
+.header__item--hide {
+  display: none;
+}
+
 .header__info {
   border-right: solid 2px #d4d4d4;
   padding-right: 20px;

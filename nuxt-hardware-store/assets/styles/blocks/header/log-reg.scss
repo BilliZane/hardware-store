@@ -1,0 +1,17 @@
+.log-reg {
+  @include flex-between;
+  font-size: 18px;
+
+  &__item {
+    padding: 0 10px;
+    transition: color $transitionDuration;
+    &:hover {
+      cursor: pointer;
+      color: $c-orange;
+    }
+    
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

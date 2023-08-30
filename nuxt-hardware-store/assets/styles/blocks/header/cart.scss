@@ -1,0 +1,16 @@
+.cart {
+  @include flex-between;
+  @media (max-width: 565px) {
+    margin-left: -132px;
+  }
+  
+  &__titile {
+    padding-left: 10px;
+    font-size: 18px;
+    transition: color $transitionDuration;
+    &:hover {
+      cursor: pointer;
+      color: $c-orange;
+    }
+  }
+}

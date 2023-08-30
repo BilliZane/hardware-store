@@ -1,0 +1,36 @@
+.top {
+  background: $c-orange;
+  color: $c-white;
+  font-size: 16px;
+
+  &__line {
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 0;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    @media (max-width: 900px) {
+      padding-bottom: 10px;
+    }
+    &:last-child {
+      @media (max-width: 900px) {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__text--bold {
+    font-size: 20px;
+    @include font-bold;
+  }
+}

@@ -1,0 +1,73 @@
+.filters {
+  @include flex-between;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: solid 1px $c-grey-light;
+  border-radius: 5px;
+  @include font-bold;
+
+  &__products {
+    color: $c-black;
+    margin: 5px 0;
+  }
+
+  &__products-amount {
+    color: $c-grey-blue-dark;
+  }
+
+  &__wrap {
+    @include flex-start;
+  }
+
+  &__label {
+    color: $c-black;
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  &__item {
+    margin: 5px 0;
+    margin-right: 10px;
+    transition: color 600ms;
+    text-decoration: underline;
+    text-align: center;
+    transition: color $transitionDuration;
+    &:hover {
+      color: $c-grey-blue-dark;
+      cursor: pointer;
+    }
+  }
+
+  &__price-up {
+    position: relative;
+    &::before {
+      content: '';
+      background: url('@/static/img/main/filters/arrow-up.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 15px;
+      min-width: 7px;
+      position: absolute;
+      top: 2px;
+      left: -6px;
+    }
+  }
+
+  &__price-down {
+    position: relative;
+    &::before {
+      content: '';
+      background: url('@/static/img/main/filters/arrow-down.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 15px;
+      min-width: 7px;
+      position: absolute;
+      top: 2px;
+      left: -6px;
+    }
+  }
+}

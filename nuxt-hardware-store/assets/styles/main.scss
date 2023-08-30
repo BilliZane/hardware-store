@@ -1,0 +1,61 @@
+@import './utils/resets.scss';
+@import './utils/fonts.scss';
+@import './utils/vars.scss';
+@import './utils/mixins.scss';
+
+@import './blocks/container.scss';
+@import './blocks/top.scss';
+
+@import './blocks/header/header.scss';
+@import './blocks/header/log-reg.scss';
+@import './blocks/header/cart.scss';
+@import './blocks/header/search.scss';
+
+@import './blocks/nav.scss';
+@import './blocks/nav-mobile.scss';
+
+@import './blocks/content.scss';
+
+@import './blocks/aside/aside.scss';
+@import './blocks/aside/price-widget.scss';
+@import './blocks/aside/stock-widget.scss';
+@import './blocks/aside/categories-widget.scss';
+@import './blocks/aside/product-of-the-week.scss';
+
+@import './blocks/buttons//button-dark.scss';
+@import './blocks/buttons//button-light.scss';
+
+@import './blocks/main/main-content.scss';
+@import './blocks/main/breadcrumbs.scss';
+@import './blocks/main/filters.scss';
+
+@import './blocks/main/product-card/product-card.scss';
+@import './blocks/main/product-card/label-disount.scss';
+@import './blocks/main/product-card/label-top-sales.scss';
+
+@import './blocks/footer.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include font-regular;
+  color: $c-grey-blue;
+  font-size: 16px;
+
+  position: relative;
+
+  &::-webkit-scrollbar {
+    max-width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $c-grey-light;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $c-grey-blue;
+    border-radius: 10px;
+  }
+}

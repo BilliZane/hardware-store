@@ -1,0 +1,29 @@
+.button-light {
+  background: $c-orange;
+  @include flex-between;
+  @include font-bold;
+  color: $c-white;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  min-width: max-content;
+
+  cursor: pointer;
+  transition: background $transitionDuration;
+
+  &:hover {
+    background: $c-orange-dark;
+  }
+
+  &__text {
+    padding-left: 5px;
+  }
+
+  &__mr {
+    margin-right: 15px;
+  }
+  &--disabled {
+    background: $c-grey-dark;
+    pointer-events: none;
+  }
+}

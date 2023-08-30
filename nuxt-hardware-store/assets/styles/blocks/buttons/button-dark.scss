@@ -1,0 +1,38 @@
+.button-dark {
+  background: $c-grey-blue;
+  @include flex-between;
+  @include font-bold;
+  color: $c-white;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  min-width: max-content;
+  cursor: pointer;
+  transition: background $transitionDuration;
+
+  @media (max-width: 960px) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background: $c-grey-blue-dark;
+  }
+
+  &__text {
+    padding-left: 5px;
+    word-wrap: break-word;
+  }
+
+  &__mr {
+    margin-right: 15px;
+    @media (max-width: 960px) {
+      margin-right: 0;
+    }
+  }
+
+  &__mb {
+    @media (max-width: 960px) {
+      margin-bottom: 5px;
+    }
+  }
+}

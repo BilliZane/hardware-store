@@ -1,0 +1,23 @@
+.label-top-sales {
+  background: $c-magenta;
+  color: $c-white;
+  max-width: max-content;
+  padding: 10px 12px;
+  @include font-bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-size: 16px;
+
+  position: absolute;
+  left: 65px;
+  top: -15px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    top: 22px;
+    left: -5px;
+  }
+}
