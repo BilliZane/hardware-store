@@ -11,6 +11,10 @@
     font-size: 16px;
   }
 
+  &--opacity-low {
+    opacity: 0.6;
+  }
+
   &__image-wrap {
     @include flex-center;
     flex-grow: 1;
