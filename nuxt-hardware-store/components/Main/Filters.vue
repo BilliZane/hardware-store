@@ -13,7 +13,7 @@
           { 'filters__price-up': priceStatus },
           { 'filters__price-down': !priceStatus }
         ]"
-        @click="togglePriceStatus"
+        @click="togglePrice"
         >Price</span
       >
       <!-- <span class="filters__item">Date of addition</span> -->
@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
   data () {
     return {
@@ -30,9 +32,11 @@ export default {
   },
 
   methods: {
-    togglePriceStatus () {
+    ...mapMutations('products', ['sortByPrice']),
+
+    togglePrice () {
       this.priceStatus = !this.priceStatus
-    }
+      this.sortByPrice(this.priceStatus)    }
   }
 }
 </script>

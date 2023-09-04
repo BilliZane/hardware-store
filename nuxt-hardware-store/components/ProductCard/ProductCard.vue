@@ -15,7 +15,9 @@
     <div class="product-card__title">
       {{ product.title }}
     </div>
-    <div class="product-card__old-price">$ {{ product.discountPrice }}</div>
+    <div class="product-card__old-price" v-if="product.discountPrice > 0">
+      $ {{ product.discountPrice }}
+    </div>
     <div class="product-card__price">$ {{ product.price }}</div>
 
     <div class="product-card__shipping" v-if="product.inStock">
@@ -31,7 +33,9 @@
     </div>
 
     <div class="product-card__buttons">
-      <ButtonDark class="button-dark__mr button-dark__mb" />
+      <nuxt-link :to="`/products/${product.id}`">
+        <ButtonDark class="button-dark__mr button-dark__mb" />
+      </nuxt-link>
       <ButtonLight :class="{ 'button-light--disabled': !product.inStock }" />
     </div>
   </div>

@@ -13,26 +13,15 @@
           <li class="header__item header__item--hide">
             <div class="log-reg">
               <BaseIcon name="loginRegister" />
-
               <span class="log-reg__item">Login</span> /
               <span class="log-reg__item">Registration</span>
             </div>
           </li>
           <li class="header__item">
-            <div class="cart">
-              <BaseIcon name="cart" />
-              <span class="cart__titile">Cart</span>
-            </div>
+            <Cart />
           </li>
         </ul>
-
-        <form class="search">
-          <input class="search__input" value="" placeholder="Find a product" id="search" />
-
-          <div class="search__icon-wrap">
-            <BaseIcon name="search" />
-          </div>
-        </form>
+        <Search />
       </div>
     </div>
   </header>
@@ -40,8 +29,15 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
+import Cart from '@/components/Header/Cart.vue'
+import Search from '@/components/Header/Search.vue'
 
 export default {
+  components: {
+    Cart,
+    Search
+  },
+
   methods: {
     ...mapMutations('nav', ['navMobileToggle'])
   },

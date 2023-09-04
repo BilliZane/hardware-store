@@ -11,7 +11,7 @@
 
 <script>
 import Top from '@/components/Top.vue'
-import Header from '@/components/Header.vue'
+import Header from '@/components/Header/Header.vue'
 import Nav from '@/components/Nav.vue'
 import NavMobile from '@/components/NavMobile.vue'
 import Content from '@/components/Content.vue'

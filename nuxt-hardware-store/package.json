@@ -15,7 +15,6 @@
     "sass-loader": "10.1.1",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10",
-    "vue-tippy": "v4"
+    "vue-template-compiler": "^2.7.10"
   }
 }

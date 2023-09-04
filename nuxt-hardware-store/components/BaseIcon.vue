@@ -1,5 +1,5 @@
 <template>
-  <span v-html="iconCode" @click="$emit('event')"></span>
+  <span v-html="iconCode" @click="$emit('event')" class="icon"></span>
 </template>
 
 <script>
@@ -21,3 +21,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.icon {
+  display: flex;
+  align-items: center;
+}
+</style>
