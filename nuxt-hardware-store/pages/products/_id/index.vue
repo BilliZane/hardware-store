@@ -1,21 +1,42 @@
 <template>
-  <div>Hello, SingleProduct #{{ $route.params.id }}</div>
+  <div>
+    <div class="images">
+      <img v-for="(image, idx) in singleProduct.images" :key="idx" :src="image" alt="Photo" />
+    </div>
+  </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapActions, mapState } from 'vuex'
 
 export default {
-  name: 'Products',
-
-  computed: {
-    ...mapGetters('products', ['productsIdCodes'])
+  methods: {
+    ...mapActions('singleProduct', ['getProduct'])
   },
 
-  validate (data) {
-    return Number.isInteger(parseInt(data.params.id))
-  }
-}
+  mounted () {
+    this.getProduct(this.$route.params.id)
 
-// data.params.id
+    if (!this.singleProduct) {
+      this.$router.push('/')
+    }
+  },
+
+  computed: {
+    ...mapState('singleProduct', ['singleProduct'])
+  }
+
+  // validate (data) {
+  //   return Number.isInteger(parseInt(data.params.id))
+  // }
+}
 </script>
+
+<style>
+.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+</style>
